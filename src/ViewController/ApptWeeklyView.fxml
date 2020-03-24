@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewController.ApptWeeklyViewController">
+   <children>
+      <TableView fx:id="tbl_Weekly" layoutX="21.0" layoutY="33.0" prefHeight="200.0" prefWidth="770.0">
+        <columns>
+          <TableColumn fx:id="col_Customer" prefWidth="167.00003051757812" text="Customer" />
+          <TableColumn fx:id="col_Consultant" prefWidth="157.99996948242188" text="Consultant" />
+            <TableColumn fx:id="col_Start" prefWidth="159.4000244140625" text="Start Time (USER TIME)" />
+            <TableColumn fx:id="col_End" prefWidth="162.4000244140625" text="End Time (USER TIME)" />
+            <TableColumn fx:id="col_Type" prefWidth="127.20001220703125" text="Type" />
+        </columns>
+      </TableView>
+      <Button fx:id="btn_MainMenu" layoutX="739.0" layoutY="342.0" mnemonicParsing="false" onAction="#btnMainMenu" text="Main Menu" />
+      <Button fx:id="btn_Delete" layoutX="597.0" layoutY="342.0" mnemonicParsing="false" onAction="#deleteAppointment" text="Delete appointment" />
+      <Button layoutX="443.0" layoutY="342.0" mnemonicParsing="false" onAction="#btnUpdate" text="Update Appointment" />
+   </children>
+</AnchorPane>
